@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body{
+    background: url(../img/fondo-pantlla.jpg);
+    background-size: 100%;
+    -webkit-background-size: cover ;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+.Contenedor .Panel .Encabezado .Titulo{
+    font-weight: normal;
+    font-family: 'Courier New', Courier, monospace;
+    color:chartreuse;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+}
+.Titulo span{
+  color: rgb(255, 250, 250);
+}
+.Panel{
+    background-color:rgb(5, 5, 5);
+    filter:alpha(opacity=70);
+    -moz-opacity:.70;
+    opacity:.70;
+    width: 90%;
+    max-width: 650px;
+    margin: auto;
+    padding: 40px 35px;
+    margin-top: 30px;
+    padding-bottom: 30px;
+    border-radius: 3px;
+}
+.etiqueta{
+    display: block;
+    color:chartreuse;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    position: relative;
+}
+.input{
+    background-color:rgb(171, 202, 171);
+    border:none;
+    outline: none;
+    border-bottom: 2px solid chartreuse;
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border-radius: 2px;
+    font-size: 14px;
+    color: darkblue;
+    font-family: 'Courier New', Courier, monospace;
+}
+.boton-guardar{
+    display: flex;
+    width: 50%;
+    height: 30px;
+    
+    font-family: 'Courier New', Courier, monospace;
+    outline: none;
+    background-color: rgb(63, 216, 63);
+    font-size: 16px;
+    color: darkblue;
+    padding: 5px 0;
+    margin: auto;
+    
+    
+
+}
+.boton-guardar:hover{
+    background-color: rgb(223, 173, 80);
+}
+.boton-guardar:active{
+    background-color: rgb(109, 109, 211);
+}
+.btn{
+    display: flex;
+    width: 20%;
+    height: 30px;
+    
+    font-family: 'Courier New', Courier, monospace;
+    outline: none;
+    background-color: rgb(63, 216, 63);
+    font-size: 16px;
+    color: darkblue;
+    padding: 5px 0;
+    margin-left: auto;
+    margin-right: auto;
+  
+}
+.btn:hover{
+    background-color:rgb(223, 173, 80);
+}
+.btn:active{
+    background-color: rgb(109, 109, 211);
+}
+#contacto{
+    display: block;
+    color:rgb(33, 139, 33);
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    position: relative;
+    padding: 0 350px;
+}
+#txtNombre{
+    color: rgb(10, 10, 10);
+}
+#txtApellido{
+    color: rgb(5, 5, 5);
+}
+#txtTelefono{
+    color: rgb(8, 8, 8);
+}
+.input-error{
+    border: 2px solid red;
+}

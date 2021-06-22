@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <!-- Required meta tags -->
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+ 
+     <!-- Bootstrap CSS -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" 
+     rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" 
+     crossorigin="anonymous">
+    <!--Titulo-->
+    <title>Mi Agenda de Contactos</title>
+    <!--Adaptabilidad de pantallas-->
+
+    <link rel="stylesheet" href="css/estilos.css">
+   
+</head>
+<body>
+    
+    <div class="Contenedor">
+        <form action="" class="Panel" id="frm-contacto">
+            <div class="Encabezado">
+                <h1 class="Titulo">C<span>ontacto</span></h1>
+            </div>
+            <!--Nombres  contenido.innerHTML=`${data[Array.length -1]}` -->
+            <label 
+              for="nombre" class="etiqueta">Nombre:
+            </label>
+            <input type="text" id="nombre" 
+                class="input" placeholder="Escriba el nombre deseado..."
+                required>
+            <!--Apellidos-->
+            <label 
+              for="apellido" class="etiqueta">Apellido:
+            </label>
+            <input type="text" id="apellido" 
+                  class="input" placeholder="Escriba el apellido deseado..."
+                  required>
+            <!--telefono-->
+            <label 
+              for="telefono" class="etiqueta">Teléfono:
+            </label>
+            <input type="tel" id="telefono" 
+               class="input" placeholder="Escriba el  teléfono deseado..."
+               required>
+            <!--Guardar datos-->
+            <input type="button" class="boton-guardar"  id="boton_guardar" value="Guardar">
+       
+        </form>
+       
+        
+        <div class="contacto" id="contacto">
+          Nombre :<span id="txtNombre"></span><br/>
+          Apellido :<span id="txtApellido"></span><br/>
+          Telefono :<span id="txtTelefono"></span><br/>
+        </div>
+        <input type="button" class="btn" onclick="cargarContactos()" value="Mostrar Contacto">
+        
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+    <script src="js/contacto-control.js"></script>
+</body>
+</html>
